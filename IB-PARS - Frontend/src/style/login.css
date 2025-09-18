@@ -1,0 +1,153 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom right, #e0f2ff, #c7d2fe);
+  min-height: 100vh;
+}
+
+/* Layout */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+.login-wrapper {
+  background-color: white;
+  padding: 2.5rem;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Header */
+.icon {
+  font-size: 2.5rem;
+  color: #2563eb;
+}
+
+.title {
+  font-size: 26px;
+  font-weight: 700;
+  margin: 1rem 0 0.25rem;
+  color: #111827;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 1.5rem;
+}
+
+/* Error */
+.error {
+  background-color: #fee2e2;
+  color: #b91c1c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  font-size: 14px;
+}
+
+/* Form */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.form-group {
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  width: 100%;
+  padding: 0.625rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 15px;
+  color: #111827;
+}
+
+input:disabled {
+  background-color: #f9fafb;
+  color: #9ca3af;
+}
+
+/* Password field with toggle */
+.password-input {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 13px;
+  color: #3b82f6;
+  cursor: pointer;
+}
+
+.toggle-password:disabled {
+  color: #9ca3af;
+  cursor: not-allowed;
+}
+
+/* Button */
+.btn {
+  background-color: #2563eb;
+  color: white;
+  padding: 0.625rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #1e40af;
+}
+
+.btn:disabled {
+  background-color: #93c5fd;
+  cursor: not-allowed;
+}
+
+/* Footer */
+.footer {
+  margin-top: 1.5rem;
+  font-size: 14px;
+  color: #4b5563;
+}
+
+.footer a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
